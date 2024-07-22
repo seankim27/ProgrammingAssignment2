@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+# My function will save the value of the mean in cache so
+# when I need mean value again, I can be looked up in the cache rather than 
+# repeat the calculation.
 
-## Write a short comment describing this function
+## This function generates special "matrix" object that can cache its inverse. 
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -18,7 +19,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function computes the inverse of the special "matrix" 
+# returned by makeCacheMatrix above. 
+# If the inverse has already been calculated (and the matrix has not changed), 
+# then the cachesolve should retrieve the inverse from the cache
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
